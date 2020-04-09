@@ -25,6 +25,21 @@ h4 {
     text-transform: uppercase;
 }
 
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
 .container {
     margin: 30px auto;
     width: 350px;
@@ -70,4 +85,48 @@ h4 {
   
 .list li.minus {
     border-right: 5px solid #be3f31;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #4c37b3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #be3f31;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn:focus,
+.delete-btn:focus {
+    outline: 0;
 }
