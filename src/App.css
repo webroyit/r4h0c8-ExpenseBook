@@ -40,9 +40,34 @@ h4 {
 }
 
 .money-plus {
-    color: #2ecc71;
+    color: #36c270;
 }
   
 .money-minus {
-    color: #c0392b;
+    color: #be3f31;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.plus {
+    border-right: 5px solid #36c270;
+}
+  
+.list li.minus {
+    border-right: 5px solid #be3f31;
 }
