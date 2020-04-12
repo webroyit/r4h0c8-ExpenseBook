@@ -26,7 +26,8 @@ export const GlobalProvider = ({ children }) => {
 
     // passing inititalState to another component
     return (<GlobalContext.Provider value={{
-        transactions: state.transactions
+        transactions: state.transactions,
+        deleteTransaction
     }}>
         {children}
     </GlobalContext.Provider>);
