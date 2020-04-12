@@ -24,10 +24,18 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
-    // passing inititalState to another component
+    function addTransaction(transaction){
+        dispatch({
+            type: "ADD_TRANSACTION",
+            payload: transaction
+        })
+    }
+
+    // passing inititalState and actions to another component
     return (<GlobalContext.Provider value={{
         transactions: state.transactions,
-        deleteTransaction
+        deleteTransaction,
+        addTransaction
     }}>
         {children}
     </GlobalContext.Provider>);
